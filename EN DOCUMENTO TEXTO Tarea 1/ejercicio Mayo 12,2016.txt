@@ -1,0 +1,34 @@
+#include <iostream>
+/*ingresar un numero que sea dividible entre 5 mayor a 100, luego preguntar si desea continuar, al final presentar
+el promedio de los numeros, validar el numero con el ciclo do whil */
+
+using namespace std;
+int num, suma=0, c=0,prom;
+char resp;
+int main()
+{
+    do
+    {
+
+
+    do
+    {
+    cout << "Ingresar numero divisible entre 5 mayor a 100 ";
+    cin>>num;
+    }
+    while ((num %5 !=0) and (num<100));
+    suma+= num;
+    do
+    {
+        cout<<"Desea continuar ";
+        cin>>resp;
+        resp=toupper(resp);
+    }
+    while ((resp!='S') and (resp!='N'));
+    c++;
+}
+while (resp!='N');
+prom=suma/c;
+cout<<"Promedio es "<<prom<<"\n";
+    }
+

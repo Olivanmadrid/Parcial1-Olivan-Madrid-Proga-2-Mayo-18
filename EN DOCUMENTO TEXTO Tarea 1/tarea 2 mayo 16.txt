@@ -1,0 +1,40 @@
+#include <iostream>
+#include <time.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+using namespace std;
+
+int main()
+{
+     srand (time(0));
+
+int numero,mayor,suma,n;
+mayor=0;
+n=0;
+float promedio;
+char s='x';
+char letra;
+do
+    {
+do
+{
+    numero = rand ()% (500-1);
+}
+while ( (numero % 2 == 0) and (numero %3==0)and (numero% 5 ==0) and (numero % 7 ==0) );
+cout << "Valor de Numero :"  << numero << "\n";
+    n++;
+
+if (numero>mayor)
+    mayor=numero;
+ numero++;
+    promedio=numero/n;
+cout<<"Desea Continuar?";
+cin >> letra;
+    }
+while (letra=='S');
+cout <<"Mayor:"<<mayor<<"\n";
+cout<<"Promedio"<<promedio<<"\n";
+    system ("PAUSE");
+    return 0;
+}

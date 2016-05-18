@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+void presentar(int l)
+{
+    int k, i;
+    for (i=1; i<=1;i++)
+    {
+        for(k=1;k<=1;k++)
+        {
+            cout<<k;
+        }
+        cout<<"\n";
+    }
+}
+
+    int main()
+{
+    int num;
+    cout<<"Ingesar el numero...";
+    cin>>num;
+    presentar(num);
+}
+

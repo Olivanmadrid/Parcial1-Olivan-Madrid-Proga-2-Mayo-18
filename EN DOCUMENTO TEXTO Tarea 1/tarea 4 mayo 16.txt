@@ -1,0 +1,24 @@
+#include <iostream>
+#include <stdlib.h>
+#include <stdio.h>
+
+using namespace std;
+
+int main()
+{
+    int x, inicio, tope;
+    tope=5;
+    x = 1;
+    inicio = 1;
+    while(x <= tope)
+    {
+        while (inicio <= x)
+    {
+         cout<<""<<inicio<<"";
+            inicio++;
+    }
+        x++;
+        inicio=1;
+        printf("\n");
+    }
+    }

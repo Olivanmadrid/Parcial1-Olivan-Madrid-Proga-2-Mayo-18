@@ -1,0 +1,39 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+char let;
+
+
+
+    cout << "Ingresa Un caracter y Te digo si es Vocal o No!: " << endl;
+    cin>>let;
+
+    switch(let)
+    {
+    case 'a':
+             cout<<"Es una Vocal";
+             break;
+        case 'e':
+
+              cout<<"Es una Vocal";
+              break;
+        case 'i':
+              cout<<"Es una Vocal";
+              break;
+        case 'o':
+              cout<<"Es una Vocal";
+              break;
+        case 'u':
+              cout<<"Es una Vocal";
+              break;
+        default:
+            cout<<"Consonante";
+            break;
+
+    }
+
+    return 0;
+}

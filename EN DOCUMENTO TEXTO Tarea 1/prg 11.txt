@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{int n1,n2;
+
+
+    cout << "Ingrese dos valores numericos"<<endl;
+    cin>>n1>>n2;
+
+    if ((n1>n2) or (n2<n1))
+    {
+        cout<<"Valores Ingresados de modo ascendente, por lo tanto quedan iguales!:  "<<n1<<" "<<n2<<endl;
+
+    }
+    else
+       cout<<"Se Intercambio El orden de escritura:"<<n2<<" "<<n1;
+
+
+
+
+
+
+    return 0;
+}

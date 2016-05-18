@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+int n1;
+/*ingresar un numero de hasta 4 cifras pero puede ingresar uno mayor, el programa debera de escribir cuantas cifras tine el numro
+si tiene mas o igual a cuatro cifras escribir mas de cuatro cifras*/
+
+int main()
+{
+    cout << "Ingrsar un Numero";
+    cin>>n1;
+
+    if (n1<0)
+        n1*= (-1);
+
+    if (n1<=9)
+        cout<<"Tiene 1 cifra";
+    else if(n1<=99)
+        cout<<"Tiene 2 cifras";
+    else if (n1<=999)
+        cout<<"Tiene 3 cifra";
+    else
+        cout<<"Tiene cuatro o mas de cuatro cifras";
+
+        return 0;
+}

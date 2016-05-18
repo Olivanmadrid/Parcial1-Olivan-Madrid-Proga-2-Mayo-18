@@ -1,0 +1,43 @@
+#include <iostream>
+#include <stdlib.h>
+#include <stdio.h>
+
+using namespace std;
+
+int main()
+{
+int numero,parmayor,parmenor,contador,suma;
+float promedio;
+contador=0;
+parmayor=0;
+suma=0;
+char s='x';
+char letra;
+
+do{
+do{
+cout<<"Ingrese un numero:""\n";
+cin>>numero;}
+while (numero%2!=0);
+
+{
+if
+  (numero>parmayor)
+  parmayor=numero;
+
+if (numero<parmenor)
+    parmenor=numero;}
+
+suma=suma+numero;
+contador++;
+promedio=suma/contador;
+
+cout<<"Desea continuar?";
+cin>>letra;}
+while (letra=='S');
+cout<<"Mayor :" <<parmayor<<"\n";
+cout<<"Menor:"<<parmenor<<"\n";
+cout <<"Promedio:"<<promedio<<"\n";
+cout<<"suma"<<suma<<"\n";
+cout<<"contador"<<contador<<"\n";
+}

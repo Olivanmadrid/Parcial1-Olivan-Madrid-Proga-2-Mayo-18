@@ -1,0 +1,54 @@
+#include <iostream>
+#include <stdlib.h>
+#include <stdio.h>
+
+using namespace std;
+
+int main()
+{  int numero;
+   int mayor,menor;
+   mayor=0;
+   menor=99999999;
+   int ncifras,auxnum,cifra,max,min,suma,prom;
+     do
+     {
+       do
+       {  cout<<"Ingresar un numero ";
+          cin>> numero;
+
+       } while(numero%2!=0);
+       _flushall();
+
+       ncifras=numero;
+       auxnum=numero;suma=0;max=0;min=10;
+
+       while (auxnum>10)
+       {
+           ncifras+1;
+           cifra=auxnum % 10;
+           auxnum=auxnum/10;
+           suma+=cifra;
+           if (max<cifra)
+                max=cifra;
+           if (min>cifra)
+                min=cifra;
+
+       }
+       suma+=auxnum;
+       if (ncifras==1)
+       {
+           max=numero;
+           min=numero;
+           suma=numero;
+           ncifras=1;
+       }
+
+       ;
+       prom=suma/ncifras;
+       cout<<"Cifras del Numero " <<ncifras<<"\n";
+       cout<<"Mayor de las cifras "<<max<<"\n";
+       cout<<"Menor de las cifras "<<min<<"\n";
+       cout<<"suma "<<suma<<"\n";
+
+     }
+ return 0;

@@ -1,0 +1,30 @@
+#include <iostream>
+#include <stdlib.h>
+#include <stdio.h>
+using namespace std;
+
+int main ()
+{
+int num;
+
+cin>>num;
+
+if ((num>99) && (num<=999))
+    {
+        for (;num != 0; num/= 10 )
+    cout<< num % 10;
+    cout<<"\n";
+
+}
+else
+ {
+
+   cout<<"Numero menor que 3 cifras"<<endl;
+ }
+
+
+
+
+
+system("PAUSE");
+}

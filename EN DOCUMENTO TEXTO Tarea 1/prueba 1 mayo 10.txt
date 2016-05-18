@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+int num;
+int main()
+{
+    cout << "Ingrese Numero";
+    cin>>num;
+
+    do
+    {
+        if (num%2==0)
+        cout<<num<<endl;
+
+        }
+
+       cout<<"desea continuar ";
+       cin>>resp;
+       resp=toupper(resp);
+
+       }while ((resp!='S') and (resp!='N'));
+
+    }
+
+    while (resp!='N');
+    cout<<"Mayor de los pares...>"<<mayor<<"\n";
+}
+
+
+}

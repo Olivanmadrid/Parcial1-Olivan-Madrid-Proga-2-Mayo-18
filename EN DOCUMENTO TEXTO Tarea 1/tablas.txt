@@ -1,0 +1,21 @@
+#include <iostream>
+
+
+main()
+{
+
+int x=0,b,a,n;
+
+cout<<"\n Ingrese un numero del 1 al 9:";
+
+do{a=x*b;
+   cout<<"\n Ingrese el resultado de"<<x<<"*"<<b<<"=";
+
+   if(n==a)
+   cout<<"\n CORRECTO";
+   else
+   cout<<"\n ERROR";
+   x++;
+  }while(x<10);
+  return 0;
+}

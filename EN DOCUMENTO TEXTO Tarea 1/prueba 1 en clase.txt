@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+int numero;
+int cifra, suma=0, c=0;
+float promedio;
+
+int main()
+{
+    cout << "Ingrese un Numero";
+    cin>>numero;
+    while (numero>0)
+    {
+        cifra=numero % 10;
+        numero= numero/10;
+        suma+= cifra;
+        c++;
+    }
+    promedio = float (suma) /float(c);
+    cout<<"suma de los digitos es"<<suma<<"\n";
+    cout<<"promedio de los digitos es"<<promedio<<"\n";
+
+    }

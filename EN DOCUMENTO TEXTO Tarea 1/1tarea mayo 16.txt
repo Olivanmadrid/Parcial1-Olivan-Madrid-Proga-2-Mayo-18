@@ -1,0 +1,35 @@
+#include <iostream>
+#include <stdlib.h>
+#include <stdio.h>
+
+using namespace std;
+
+
+
+int main()
+{
+int numero,parmayor,contador,n,suma;
+suma=0;
+n=0;
+parmayor=0;
+contador=0;
+float promedio;
+do{
+do{
+cout<<"Ingrese un numero impar y mayor a 50:""\n";
+cin>>numero;}
+while ((numero%2==0) or (numero<=50));
+{
+
+if
+  (numero>parmayor)
+  parmayor=numero;
+
+contador++;
+if (numero>100)
+    suma=numero++;
+    promedio=suma/contador;
+}}
+while (contador<10);
+cout<<"Mayor :" <<parmayor<<"\n";
+cout <<"Promedio:"<<promedio<<"\n";}
